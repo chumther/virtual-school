@@ -65,9 +65,11 @@ body {
 .sidebar {
   box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.5);
   background-color: #ebf0f7;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   color: #f7f7f7;
+  height: 42rem;
+  overflow: scroll;
 }
 
 .todo {
@@ -82,10 +84,10 @@ body {
 }
 
 .menu-bar {
-    box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.5);
   background-color: #3f4caa;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .card{

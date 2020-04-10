@@ -28,46 +28,11 @@ body {
   padding-top: 20px;
 }
 
-.days {
-  width: auto;
-  height: 100px;
-  border-top: 1px solid #eee;
-  border-left: 1px solid #eee;
-  padding-top: 15px;
-  color: #747978;
-  transition: all .3s;
-}
-
-.horas {
-  width: auto;
-  height: 80px;
-  border-top: 1px solid #eee;
-  border-left: 1px solid #eee;
-  padding-top: 15px;
-  color: #747978;
-}
-
-.days:hover,
-.days:focus {
-  transition: all .3s;
-  border-left: 5px solid #d9534f;
-  color: #747978;
-}
-
 .sidebar-title {
   color: #394796;
   text-align: right;
   margin: 2rem;
   border-bottom: 2px solid #394796;
-}
-
-.weekdays {
-  border-left: 1px solid #eee;
-  padding-bottom: 5px;
-  padding-top: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #C7BEBE;
 }
 
 .month {
@@ -89,4 +54,8 @@ body {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     overflow: scroll;
+}
+
+.contenido{
+  width: 90%;
 }

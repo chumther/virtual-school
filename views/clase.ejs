@@ -17,7 +17,7 @@
         </div>
         <div class="menu-content">
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#videos-tab" role="tab" aria-controls="v-pills-profile" aria-selected="false">Videos</a>
+            <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#videos-tab" role="tab" aria-controls="v-pills-profile" aria-selected="false">Videos</a>
             <!-- <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#menuprincipal-tab" role="tab" aria-controls="v-pills-home" aria-selected="true">Menu Principal</a> -->
             <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#discusiones-tab" role="tab" aria-controls="v-pills-messages" aria-selected="false">Discusiones</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#cuestionarios-tab" role="tab" aria-controls="v-pills-settings" aria-selected="false">Cuestionarios</a>
@@ -34,34 +34,37 @@
           </div>
 
           <!-- ======== Videos =============== -->
-          <div class="tab-pane fade" id="videos-tab" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+          <div class="tab-pane fade show active" id="videos-tab" role="tabpanel" aria-labelledby="v-pills-profile-tab">
             <div class="title">
               <h1>Videos</h1>
             </div>
-            <ul class="list-group list-group-flush mt-3">
+            <div class="container contenido">
+              <ul class="list-group list-group-flush mt-3">
 
-              <a data-toggle="collapse" href="#video1" href="#" class="list-group-item list-group-item-action">Video 1</a>
-              <div class="collapse" id="video1">
-                <div>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LgMptyzudXU" frameborder="0" allowfullscreen></iframe>
+                <a data-toggle="collapse" href="#video1" href="#" class="list-group-item list-group-item-action">Video 1</a>
+                <div class="collapse" id="video1">
+                  <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LgMptyzudXU" frameborder="0" allowfullscreen></iframe>
+                  </div>
                 </div>
-              </div>
 
-              <a data-toggle="collapse" href="#video2" href="#" class="list-group-item list-group-item-action">Video 2</a>
-              <div class="collapse" id="video2">
-                <div>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LgMptyzudXU" frameborder="0" allowfullscreen></iframe>
+                <a data-toggle="collapse" href="#video2" href="#" class="list-group-item list-group-item-action">Video 2</a>
+                <div class="collapse" id="video2">
+                  <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LgMptyzudXU" frameborder="0" allowfullscreen></iframe>
+                  </div>
                 </div>
-              </div>
 
-              <a data-toggle="collapse" href="#video3" href="#" class="list-group-item list-group-item-action">Video 3</a>
-              <div class="collapse" id="video3">
-                <div>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LgMptyzudXU" frameborder="0" allowfullscreen></iframe>
+                <a data-toggle="collapse" href="#video3" href="#" class="list-group-item list-group-item-action">Video 3</a>
+                <div class="collapse" id="video3">
+                  <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LgMptyzudXU" frameborder="0" allowfullscreen></iframe>
+                  </div>
                 </div>
-              </div>
 
-            </ul>
+              </ul>
+            </div>
+
           </div>
 
           <!-- ======= Discusiones ========= -->
@@ -76,16 +79,156 @@
             <div class="title">
               <h1>Cuestionarios</h1>
             </div>
+            <div class="container contenido">
+              <ul class="list-group list-group-flush">
+                <a href="#" data-toggle="modal" data-target="#exampleModalLong" class="list-group-item d-flex justify-content-between align-items-center">
+                  Cuestionario 1
+                  <span id="nota" class="badge">Pendiente</span>
+                </a>
+                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                  Cuestionario 2
+                  <span class="badge">Pendiente</span>
+                </a>
+              </ul>
+            </div>
           </div>
 
         </div>
       </div>
     </div>
   </div>
-</body>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>Pregunta 1: El promedio de los primeros 50 números naturales es</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            25.30
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            25.5
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
+          <label class="form-check-label" for="exampleRadios3">
+            25.00
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
+          <label class="form-check-label" for="exampleRadios4">
+            12.25
+          </label>
+        </div>
+
+        <br>
+        <h5>Pregunta 2: El promedio de los primeros 50 números naturales es</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios5">
+            25.30
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option2">
+          <label class="form-check-label" for="exampleRadios6">
+            25.5
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios7" value="option2">
+          <label class="form-check-label" for="exampleRadios7">
+            25.00
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios8" value="option2">
+          <label class="form-check-label" for="exampleRadios8">
+            12.25
+          </label>
+        </div>
+
+        <br>
+        <h5>Pregunta 3: El promedio de los primeros 50 números naturales es</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios9" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios9">
+            25.30
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios10" value="option2">
+          <label class="form-check-label" for="exampleRadios10">
+            25.5
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios11" value="option2">
+          <label class="form-check-label" for="exampleRadios11">
+            25.00
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios12" value="option2">
+          <label class="form-check-label" for="exampleRadios8">
+            12.25
+          </label>
+        </div>
+
+        <br>
+        <h5>Pregunta 4: El promedio de los primeros 50 números naturales es</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios13" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios13">
+            25.30
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios14" value="option2">
+          <label class="form-check-label" for="exampleRadios14">
+            25.5
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios15" value="option2">
+          <label class="form-check-label" for="exampleRadios15">
+            25.00
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios16" value="option2">
+          <label class="form-check-label" for="exampleRadios16">
+            12.25
+          </label>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button id="myModal" type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+<script src="scripts/clase.js" charset="utf-8"></script>
 </html>
