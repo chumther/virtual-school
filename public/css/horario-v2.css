@@ -1,0 +1,104 @@
+body {
+  background-color: #ffda70;
+  font-family: 'Baloo Paaji 2';
+}
+
+.days {
+  width: auto;
+  height: 100px;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  padding-top: 15px;
+  color: #747978;
+  transition: all .3s;
+}
+
+.horas {
+  width: auto;
+  height: 80px;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  padding-top: 15px;
+  color: #747978;
+}
+
+.days:hover,
+.days:focus {
+  transition: all .3s;
+  border-left: 5px solid #d9534f;
+  color: #747978;
+}
+
+.sidebar-title {
+  color: #394796;
+  text-align: right;
+  margin: 2rem;
+  border-bottom: 2px solid #394796;
+}
+
+.list-group-item {
+  background-color: inherit;
+}
+
+.weekdays {
+  border-left: 1px solid #eee;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #C7BEBE;
+}
+
+.month {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #394796;
+}
+
+.calendar {
+  padding-top: 3rem;
+  padding-left: 2rem;
+  background-color: #f7f7f7;
+  box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+  box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.5);
+  background-color: #ebf0f7;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  color: #f7f7f7;
+}
+
+.todo {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.navbar-light {
+  background-image: linear-gradient(to right, #394796, #6b9ad1);
+}
+
+.menu-bar {
+    box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.5);
+  background-color: #3f4caa;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.card{
+  color: #747978;
+  border-style: none;
+  border-radius: 20px;
+  min-height: 100px;
+}
+.card-header{
+  border-style: none;
+  border-radius: 20px;
+}
+
+h5 {
+  font-size: 1rem;
+}
