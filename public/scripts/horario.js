@@ -67,9 +67,8 @@ $("#literatura").click(function(){
                   <div class="card-body">
                     <h5>PENDIENTE</h5>
                     <br>
-                    <h6 class="card-subtitle mb-2 text-muted">Questionario 1</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Cuestionario 1</h6>
                     <p class="card-text">Completa el cuestionario antes de Abril 20</p>
-                    <a href="#" class="card-link">Ver Cuestionario</a>
                   </div>
                 </div>
 
