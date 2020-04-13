@@ -4,18 +4,39 @@ $("#myModal").click(function() {
 
   let grade = getGrade();
 
-  if (grade > 6)
+  if (grade > 8){
     $("#Sucess-alert-modal").modal('show');
-  else if (grade > 3)
+      $("#notaSucess").text("Tu nota es: " + grade);
+  }
+  else if (grade > 3){
     $("#Warning-alert-modal").modal('show');
-  else
+    $("#notaWarning").text("Tu nota es: " + grade);
+  }
+  else{
     $("#Danger-alert-modal").modal('show');
+    $("#notaDanger").text("Tu nota es: " + grade);
+  }
 
+  $("#notaModal").text("Tu nota es: " + grade);
   $("#nota").text(grade + "/10");
 });
 
 function getGrade() {
-  return 3;
+  var grade = 0;
+   if($("#exampleRadios2").is(":checked")){
+     grade = grade + 2.5;
+   }
+   if($("#exampleRadios6").is(":checked")){
+     grade = grade + 2.5;
+   }
+   if($("#exampleRadios8").is(":checked")){
+     grade = grade + 2.5;
+   }
+   if($("#exampleRadios14").is(":checked")){
+     grade = grade + 2.5;
+   }
+
+   return grade;
 }
 
 $("#discusion-submit").click(function() {
