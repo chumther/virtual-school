@@ -23,6 +23,10 @@ app.post("/horario", function(req, res){
   res.render("horario-v2");
 });
 
+app.get("/horario", function(req, res){
+  res.redirect("/");
+});
+
 app.get("/clase", function(req, res){
   res.render("clase");
 });
