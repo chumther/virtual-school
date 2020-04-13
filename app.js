@@ -24,7 +24,7 @@ app.post("/horario", function(req, res){
 });
 
 app.get("/horario", function(req, res){
-  res.redirect("/");
+  res.render("horario-v2");
 });
 
 app.get("/clase", function(req, res){

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Matematica</title>
+  <script src="https://kit.fontawesome.com/46ca99fbcf.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/clase.css">
 </head>
@@ -12,14 +13,17 @@
   <div class="main">
     <div class="row h-100">
       <div class="col-2 menu-bar">
+        <div class="mt-3 mx-3">
+          <a href="/horario"><i class="fas fa-arrow-left"></i> Regresar</a>
+        </div>
         <div class="title text-center">
-          <h2>Matematica</h2>
+          <h2>Literatura</h2>
         </div>
         <div class="menu-content">
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#videos-tab" role="tab" aria-controls="v-pills-profile" aria-selected="false">Videos</a>
             <!-- <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#menuprincipal-tab" role="tab" aria-controls="v-pills-home" aria-selected="true">Menu Principal</a> -->
-            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#discusiones-tab" role="tab" aria-controls="v-pills-messages" aria-selected="false">Discusiones</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#discusiones-tab" role="tab" aria-controls="v-pills-messages" aria-selected="false">Gestion en Clase</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#cuestionarios-tab" role="tab" aria-controls="v-pills-settings" aria-selected="false">Cuestionarios</a>
           </div>
         </div>
@@ -40,37 +44,80 @@
             </div>
             <div class="container contenido">
               <ul class="list-group list-group-flush mt-3">
-
-                <a data-toggle="collapse" href="#video1" href="#" class="list-group-item list-group-item-action">Video 1</a>
-                <div class="collapse" id="video1">
-                  <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LgMptyzudXU" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                </div>
-
-                <a data-toggle="collapse" href="#video2" href="#" class="list-group-item list-group-item-action">Video 2</a>
-                <div class="collapse" id="video2">
-                  <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LgMptyzudXU" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                </div>
-
-                <a data-toggle="collapse" href="#video3" href="#" class="list-group-item list-group-item-action">Video 3</a>
-                <div class="collapse" id="video3">
-                  <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LgMptyzudXU" frameborder="0" allowfullscreen></iframe>
+                <div>
+                  <a data-toggle="collapse" href="#video1" href="#" class="list-group-item list-group-item-action">
+                    <div class="d-inline mr-5">
+                      Resumen de "El Principito"
+                    </div>
+                    <div class="d-inline mr-5 ml-5">
+                      |
+                    </div>
+                    <div class="d-inline ml-5">
+                      Abril 3 2020
+                    </div>
+                  </a>
+                  <div class="collapse" id="video1">
+                    <div>
+                      <div class="row">
+                        <div class="col">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/LgMptyzudXU" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col">
+                          <div class="video-comments py-2">
+                            <h4 my-2>Comentarios del profesor</h4>
+                            <p>Por favor, mira el video acerca del libro El Principito. No olvides revisar Gestion en Clase para participar!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
               </ul>
             </div>
-
           </div>
 
           <!-- ======= Discusiones ========= -->
-          <div class="tab-pane fade" id="discusiones-tab" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+          <div class="tab-pane fade h-100" id="discusiones-tab" role="tabpanel" aria-labelledby="v-pills-profile-tab">
             <div class="title">
-              <h1>Discusiones</h1>
+              <h1>Gestion en Clase</h1>
+            </div>
+            <div style="height: 85%">
+              <div class="row h-100 my-4">
+                <div class="col-3">
+                  <h4 style="border-bottom: 1px solid">Tema</h4>
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">El Principito</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Tema 2</a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <h4 style="border-bottom: 1px solid">Conversacion</h4>
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      <div class="conversaciones">
+                        <div id="conversaciones-cards">
+                          <div class="card text-white bg-success mr-5 mb-3">
+                            <div class="card-header">
+                              Profesor Chavez
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Que es lo que mas les gustó de "El Principito"?</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="respuesta">
+                          <textarea id="discusion-input" name="name" rows="5" cols="60"></textarea>
+                          <br>
+                          <button id="discusion-submit" class="btn btn-primary" type="button" name="button">Enviar</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -79,15 +126,11 @@
             <div class="title">
               <h1>Cuestionarios</h1>
             </div>
-            <div class="container contenido">
+            <div class="container contenido my-3">
               <ul class="list-group list-group-flush">
                 <a href="#" data-toggle="modal" data-target="#exampleModalLong" class="list-group-item d-flex justify-content-between align-items-center">
-                  Cuestionario 1
+                  Cuestionario 1 - El Principito
                   <span id="nota" class="badge">Pendiente</span>
-                </a>
-                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
-                  Cuestionario 2
-                  <span class="badge">Pendiente</span>
                 </a>
               </ul>
             </div>
@@ -99,136 +142,172 @@
   </div>
 
   <!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h5>Pregunta 1: El promedio de los primeros 50 números naturales es</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-          <label class="form-check-label" for="exampleRadios1">
-            25.30
-          </label>
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-          <label class="form-check-label" for="exampleRadios2">
-            25.5
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
-          <label class="form-check-label" for="exampleRadios3">
-            25.00
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
-          <label class="form-check-label" for="exampleRadios4">
-            12.25
-          </label>
-        </div>
+        <div class="modal-body">
+          <h5>Pregunta 1: El promedio de los primeros 50 números naturales es</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              25.30
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              25.5
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
+            <label class="form-check-label" for="exampleRadios3">
+              25.00
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
+            <label class="form-check-label" for="exampleRadios4">
+              12.25
+            </label>
+          </div>
 
-        <br>
-        <h5>Pregunta 2: El promedio de los primeros 50 números naturales es</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios5" value="option1" checked>
-          <label class="form-check-label" for="exampleRadios5">
-            25.30
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios6" value="option2">
-          <label class="form-check-label" for="exampleRadios6">
-            25.5
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios7" value="option2">
-          <label class="form-check-label" for="exampleRadios7">
-            25.00
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios8" value="option2">
-          <label class="form-check-label" for="exampleRadios8">
-            12.25
-          </label>
-        </div>
+          <br>
+          <h5>Pregunta 2: El promedio de los primeros 50 números naturales es</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios5" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios5">
+              25.30
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios6" value="option2">
+            <label class="form-check-label" for="exampleRadios6">
+              25.5
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios7" value="option2">
+            <label class="form-check-label" for="exampleRadios7">
+              25.00
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios8" value="option2">
+            <label class="form-check-label" for="exampleRadios8">
+              12.25
+            </label>
+          </div>
 
-        <br>
-        <h5>Pregunta 3: El promedio de los primeros 50 números naturales es</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios9" value="option1" checked>
-          <label class="form-check-label" for="exampleRadios9">
-            25.30
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios10" value="option2">
-          <label class="form-check-label" for="exampleRadios10">
-            25.5
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios11" value="option2">
-          <label class="form-check-label" for="exampleRadios11">
-            25.00
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios12" value="option2">
-          <label class="form-check-label" for="exampleRadios8">
-            12.25
-          </label>
-        </div>
+          <br>
+          <h5>Pregunta 3: El promedio de los primeros 50 números naturales es</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios9" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios9">
+              25.30
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios10" value="option2">
+            <label class="form-check-label" for="exampleRadios10">
+              25.5
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios11" value="option2">
+            <label class="form-check-label" for="exampleRadios11">
+              25.00
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios12" value="option2">
+            <label class="form-check-label" for="exampleRadios8">
+              12.25
+            </label>
+          </div>
 
-        <br>
-        <h5>Pregunta 4: El promedio de los primeros 50 números naturales es</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios13" value="option1" checked>
-          <label class="form-check-label" for="exampleRadios13">
-            25.30
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios14" value="option2">
-          <label class="form-check-label" for="exampleRadios14">
-            25.5
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios15" value="option2">
-          <label class="form-check-label" for="exampleRadios15">
-            25.00
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios16" value="option2">
-          <label class="form-check-label" for="exampleRadios16">
-            12.25
-          </label>
-        </div>
+          <br>
+          <h5>Pregunta 4: El promedio de los primeros 50 números naturales es</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios13" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios13">
+              25.30
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios14" value="option2">
+            <label class="form-check-label" for="exampleRadios14">
+              25.5
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios15" value="option2">
+            <label class="form-check-label" for="exampleRadios15">
+              25.00
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios16" value="option2">
+            <label class="form-check-label" for="exampleRadios16">
+              12.25
+            </label>
+          </div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button id="myModal" type="button" class="btn btn-primary">Enviar</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button id="myModal" type="button" class="btn btn-primary">Enviar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+  <!-- Alert Modal -->
+  <div class="modal fade" id="Sucess-alert-modal" tabindex="-1" role="dialog" aria-labelledby="Sucess-alert-modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+      </div>
+    </div>
+  </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <div class="modal fade" id="Warning-alert-modal" tabindex="-1" role="dialog" aria-labelledby="Sucess-alert-modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="alert alert-warning" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+      </div>
+    </div>
+  </div>
 
-<script src="scripts/clase.js" charset="utf-8"></script>
+  <div class="modal fade" id="Danger-alert-modal" tabindex="-1" role="dialog" aria-labelledby="Sucess-alert-modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="scripts/clase.js" charset="utf-8"></script>
+
+</body>
+
 </html>
