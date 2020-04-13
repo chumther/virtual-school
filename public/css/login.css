@@ -63,7 +63,8 @@
     transition: flex .2s;
     display: flex;
     flex: 0.9;
-    background-color: #3f4caa;
+    background-image: url("/images/corcho.png");
+    background-size: 400px;
     overflow: scroll;
   }
 
