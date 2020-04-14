@@ -24,21 +24,8 @@ $("#myModal").click(function() {
 function getGrade() {
   var grade = 0;
    if($("#exampleRadios2").is(":checked")){
-     grade = grade + 2;
+     grade = 10;
    }
-   if($("#exampleRadios6").is(":checked")){
-     grade = grade + 2;
-   }
-   if($("#exampleRadios9").is(":checked")){
-     grade = grade + 2;
-   }
-   if($("#exampleRadios13").is(":checked")){
-     grade = grade + 2;
-   }
-   if($("#exampleRadios19").is(":checked")){
-     grade = grade + 2;
-   }
-
    return grade;
 }
 

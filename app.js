@@ -1,4 +1,4 @@
-//jshint esversion:6
+  //jshint esversion:6
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -29,6 +29,14 @@ app.get("/horario", function(req, res){
 
 app.get("/clase", function(req, res){
   res.render("clase");
+});
+
+app.get("/historia", function(req, res){
+  res.render("clase-historia");
+});
+
+app.get("/matematica", function(req, res){
+  res.render("clase-matematica");
 });
 
 app.listen(process.env.PORT || 3000, function() {

@@ -23,19 +23,19 @@ $("#myModal").click(function() {
 
 function getGrade() {
   var grade = 0;
-   if($("#exampleRadios2").is(":checked")){
+   if($("#exampleRadios1").is(":checked")){
      grade = grade + 2;
    }
    if($("#exampleRadios6").is(":checked")){
      grade = grade + 2;
    }
-   if($("#exampleRadios9").is(":checked")){
+   if($("#exampleRadios11").is(":checked")){
      grade = grade + 2;
    }
-   if($("#exampleRadios13").is(":checked")){
+   if($("#exampleRadios15").is(":checked")){
      grade = grade + 2;
    }
-   if($("#exampleRadios19").is(":checked")){
+   if($("#exampleRadios18").is(":checked")){
      grade = grade + 2;
    }
 
