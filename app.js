@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({
 app.set('view engine', 'ejs');
 
 app.get("/", function(req, res){
-    res.render("logIn-newnew");
+    res.render("login-new");
 });
 
 app.post("/horario", function(req, res){
