@@ -16,11 +16,7 @@ app.use(bodyParser.urlencoded({
 app.set('view engine', 'ejs');
 
 app.get("/", function(req, res){
-    res.render("login-new");
-});
-
-app.post("/horario", function(req, res){
-  res.render("horario-v2");
+    res.render("login.ejs");
 });
 
 app.get("/horario", function(req, res){
@@ -29,14 +25,6 @@ app.get("/horario", function(req, res){
 
 app.get("/clase", function(req, res){
   res.render("clase");
-});
-
-app.get("/historia", function(req, res){
-  res.render("clase-historia");
-});
-
-app.get("/matematica", function(req, res){
-  res.render("clase-matematica");
 });
 
 app.listen(process.env.PORT || 3000, function() {

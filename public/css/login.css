@@ -38,6 +38,26 @@ input {
   transition: flex .3s;
 }
 
+.my-btn{
+  background-color: #3f4caa;
+  color: #eee;
+  border: 1px solid #3f4caa;
+}
+
+.my-btn:hover{
+  background-color: #eee;
+  color: #3f4caa;
+  box-shadow: 0px 0px 0px 3px rgba(63, 76, 170, 1);
+}
+
+a{
+  color: #3f4caa;
+}
+
+a:hover{
+  color: #3f4caa;
+}
+
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
