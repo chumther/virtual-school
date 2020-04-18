@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  alert("asd");
 });
 
 $("#inputEmail").click(function(ev){
