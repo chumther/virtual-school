@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&display=swap');
+
 html{
   height: 100%;
 }
@@ -66,12 +68,10 @@ body {
   padding-left: 2rem;
   background-color: #f7f7f7;
   box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.5);
-  height: 100%;
   overflow: hidden;
 }
 
 .sidebar {
-  height: 100%;
   box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.5);
   background-color: #ebf0f7;
   border-top-right-radius: 20px;
