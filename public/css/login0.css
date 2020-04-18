@@ -3,24 +3,45 @@ body {
   height: 100%;
   background-image: url("/images/lightbluepattern.png");
   background-size: 200px;
+  font-family: Helvetica, FontAwesome, sans-serif;
 }
 
-.col {
-  border: 1px solid red;
+.left-section {
+  overflow: hidden;
+  flex: 1;
 }
 
-input{
+.right-section {
+  flex: 1.4;
+}
+
+input {
   padding: 10px 20px 5px 20px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
-.form-control{
+.form-control {
   max-width: 250px;
   height: 45px;
 }
 
-.logo{
+.logo {
   height: 230px;
   width: auto;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .left-section{
+    flex: 0;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
 }
